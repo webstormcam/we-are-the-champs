@@ -71,6 +71,10 @@ button{
     margin-top: 1em;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 h2{
     margin: 1.063em 0em;
     font-size: 20px;
@@ -78,4 +82,21 @@ h2{
 
 .border{
     border: none;
+}
+
+#endorsement-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+    max-width: 1024px;
+    
+}
+
+.endorsement{
+    max-width: 317px;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 8px;
 }
