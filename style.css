@@ -100,3 +100,51 @@ h2{
     padding: 1em;
     border-radius: 8px;
 }
+
+h3{
+    background-color: #fff;
+    color: #1B1924;
+    font-weight: bold;
+}
+
+.endorse-words{
+    background-color: #fff;
+    color: #1B1924;
+    margin: 1em 0em;
+}
+
+.fromAndLikes{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+#toAndX{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+#remove{
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+#remove:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.fromAndLikes p{
+ background-color: #fff;
+ 
+}
+
+#imageNum{
+    display: flex;
+    background-color: #fff;
+}
+
+.heart{
+    margin-right: 0.5em;
+}
