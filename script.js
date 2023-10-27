@@ -14,10 +14,14 @@ const from0 = document.getElementById('from')
 
 const button = document.getElementById('submitButton')
 
-button.addEventListener('click',function(event){
-    event.preventDefault()
-    textPlace.value=""
-    to0.value=""
-    from0.value=""
+button.addEventListener('click',function(){
+    if (textPlace.value=="" || to0.value=="" || from0==""){
+        alert("Please fill out all fields!!")
+    } else{
+        textPlace.value=""
+        to0.value=""
+        from0.value=""
+    }
+   
 })
 
