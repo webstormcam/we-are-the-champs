@@ -32,14 +32,21 @@ button.addEventListener('click',function(event){
         const values ={
             "value":textPlace.value,
             "to":to0.value,
-            "from":from0.value
+            "from":from0.value,
+            "likes":0
         }
         push(congratsInDB,values)
-        console.log(values)
         textPlace.value=""
         to0.value=""
         from0.value=""
     }
    
+})
+
+onValue(congratsInDB,function(snapshot){
+    if(snapshot.exists()){
+        let itemsArray =Object.entries(snapshot.val())
+        console.log(itemsArray)
+    }
 })
 
