@@ -25,20 +25,13 @@ const from0 = document.getElementById('from')
 const button = document.getElementById('submitButton')
 
 button.addEventListener('click',function(event){
-    if (textPlace.value=="" || to0.value=="" || from0==""){
+    if (textPlace.value==""){
         alert("Please fill out all fields!!")
         event.preventDefault()
     } else{
-        const values ={
-            "value":textPlace.value,
-            "to":to0.value,
-            "from":from0.value,
-            "likes":0
-        }
-        push(congratsInDB,values)
+        const value = textPlace.value
+        push(congratsInDB,value)
         textPlace.value=""
-        to0.value=""
-        from0.value=""
     }
    
 })
@@ -49,8 +42,8 @@ onValue(congratsInDB,function(snapshot){
         console.log(itemsArray)
     }
 
-    for (let i=0;i<itemsArray.length;i++){
-        let currentItem= itemsArray[i]
-    }
+    // for (let i=0;i<itemsArray.length;i++){
+    //     let currentItem= itemsArray[i]
+    // }
 })
 
