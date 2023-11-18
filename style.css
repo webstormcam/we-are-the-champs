@@ -91,6 +91,7 @@ h2{
     gap: 1em;
     width: 100%;
     max-width: 1024px;
+    color: #fff;
     
 }
 
@@ -111,6 +112,7 @@ h3{
     background-color: #fff;
     color: #1B1924;
     margin: 1em 0em;
+    font-family: 'Inter', sans-serif;
 }
 
 .fromAndLikes{
